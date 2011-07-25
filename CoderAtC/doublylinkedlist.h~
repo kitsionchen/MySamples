@@ -1,0 +1,5 @@
+#ifndef DOUBLYLINKEDLIST_H
+#define DOUBLYLINKEDLIST_H
+
+typedef struct node *link;
+

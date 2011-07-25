@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+#define MASK 0x1F
+
+int main()
+{
+  int t = i & MASK;
+  printf("%d", t);
+  return 0;
+}

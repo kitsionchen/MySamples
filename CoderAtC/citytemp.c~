@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Node {
+  char *City;
+  int Temp;
+  struct Node *Next;
+};
+
+typedef struct Node *Link;
+Link Head;
+int NodeCount;
+
+// Add a node
+int AddNodeAscend(Link);
+// initialize list
+void CreateList(void);
+// delete a node
+int DeleteNode(Link);
+// handle duplicate inserts
+int DuplicateNode(Link, Link);
+// free a node's memory
+void FreeNode(void);
+// show list of nodes
+void ShowNodes(void);
+// compare two nodes
+int NodeCmp(Link, Link);
+
+int AddNodeAscend( Link to_add )
+{
+  Link pn, prev, curr;
+  struct Node dummy;
+  int i;
